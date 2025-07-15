@@ -1,0 +1,2178 @@
+@inproceedings{algaroba24,
+  author       = {Amar Shah and
+                  Federico Mora and
+                  Sanjit A. Seshia},
+  editor       = {Michael J. Wooldridge and
+                  Jennifer G. Dy and
+                  Sriraam Natarajan},
+  title        = {An Eager Satisfiability Modulo Theories Solver for Algebraic Datatypes},
+  booktitle    = {Thirty-Eighth {AAAI} Conference on Artificial Intelligence, {AAAI}
+                  2024, Thirty-Sixth Conference on Innovative Applications of Artificial
+                  Intelligence, {IAAI} 2024, Fourteenth Symposium on Educational Advances
+                  in Artificial Intelligence, {EAAI} 2014, February 20-27, 2024, Vancouver,
+                  Canada},
+  pages        = {8099--8107},
+  publisher    = {{AAAI} Press},
+  year         = {2024},
+  url          = {https://doi.org/10.1609/aaai.v38i8.28649},
+  doi          = {10.1609/AAAI.V38I8.28649},
+  timestamp    = {Tue, 02 Apr 2024 16:32:08 +0200},
+  biburl       = {https://dblp.org/rec/conf/aaai/ShahMS24.bib}
+}
+
+@inproceedings{verus-sys,
+  author    = {Lattuada, Andrea and Hance, Travis and Bosamiya, Jay and Brun, Matthias and Cho, Chanhee and LeBlanc, Hayley and Srinivasan, Pranav and Achermann, Reto and Chajed, Tej and Hawblitzel, Chris and Howell, Jon and Lorch, Jay and Padon, Oded and Parno, Bryan},
+  booktitle = {Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)},
+  code      = {https://github.com/verus-lang/verus},
+  month     = {November},
+  title     = {Verus: A Practical Foundation for Systems Verification},
+  year      = {2024}
+}
+
+@inproceedings{shake,
+  author    = {Zhou, Yi and Bosamiya, Jay and Li, Jessica and Heule, Marijn and Parno, Bryan},
+  booktitle = {Proceedings of the Formal Methods in Computer-Aided Design (FMCAD) Conference},
+  month     = {October},
+  title     = {Context Pruning for More Robust {SMT}-based Program Verification},
+  year      = {2024}
+}
+
+@inproceedings{cazamariposas,
+  author    = {Zhou, Yi and Shah, Amar and Lin, Zhengyao and Heule, Marijn and Parno, Bryan},
+  booktitle = {Proceedings of the Conference of Automated Deduction (CADE)},
+  month     = {July},
+  title     = {Cazamariposas: Automated Instability Debugging in {SMT}-based Program Verification},
+  year      = {2025},
+  note      = {To appear}
+}
+
+@inproceedings{proof-plumber,
+  author    = {Cho, Chanhee and Zhou, Yi and Bosamiya, Jay and Parno, Bryan},
+  booktitle = {Proceedings of the Conference on Computer Aided Verification (CAV)},
+  code      = {https://github.com/verus-lang/verus-analyzer},
+  month     = {July},
+  title     = {A Framework for Debugging Automated Program Verification Proofs via Proof Actions},
+  year      = {2024}
+}
+
+
+@inproceedings{verus-ghost,
+  author    = {Lattuada, Andrea and Hance, Travis and Cho, Chanhee and Brun, Matthias and Subasinghe, Isitha and Zhou, Yi and Howell, Jon and Parno, Bryan and Hawblitzel, Chris},
+  booktitle = {Proceedings of the ACM Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)},
+  code      = {https://github.com/verus-lang/verus},
+  month     = {October},
+  title     = {Verus: Verifying {Rust} Programs using Linear Ghost Types},
+  year      = {2023}
+}
+
+
+
+@article{pverifier,
+  author       = {Federico Mora and
+                  Ankush Desai and
+                  Elizabeth Polgreen and
+                  Sanjit A. Seshia},
+  title        = {Message Chains for Distributed System Verification},
+  journal      = {Proc. {ACM} Program. Lang.},
+  volume       = {7},
+  number       = {{OOPSLA2}},
+  pages        = {2224--2250},
+  year         = {2023},
+  url          = {https://doi.org/10.1145/3622876},
+  doi          = {10.1145/3622876},
+  timestamp    = {Sun, 10 Dec 2023 17:01:16 +0100},
+  biburl       = {https://dblp.org/rec/journals/pacmpl/MoraDPS23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{c3,
+author = {LeMay, Michael and Rakshit, Joydeep and Deutsch, Sergej and Durham, David M. and Ghosh, Santosh and Nori, Anant and Gaur, Jayesh and Weiler, Andrew and Sultana, Salmin and Grewal, Karanvir and Subramoney, Sreenivas},
+title = {Cryptographic Capability Computing},
+year = {2021},
+isbn = {9781450385572},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3466752.3480076},
+doi = {10.1145/3466752.3480076},
+abstract = {Capability architectures for memory safety have traditionally required expanding pointers and radically changing microarchitectural structures throughout processors, while only providing superficial hardening. We hence propose Cryptographic Capability Computing (C3) - the first memory safety mechanism that is stateless to avoid requiring extra metadata storage. C3 retains 64-bit pointer sizes providing legacy binary compatibility while imposing minimal touchpoints. Pointers are encrypted to unforgeably (within cryptographic bounds) reference each object. Data is encrypted even in caches and entangled with pointers for both spatial and temporal object-granular protection. Pointers become like unique keys for each allocation. C3 deploys a novel form of prediction for address translation that mitigates performance overheads even when addresses are partially encrypted. Use of a low-latency, low-area cipher from the NIST Lightweight Cryptography project avoids delaying loads by readying a data keystream by the time data is returned from the L1 cache. C3 is compatible with legacy binaries. Simulated performance overhead on SPEC CPU2006 is negligible with no memory overhead, which is a big leap forward compared to the overheads imposed by past memory safety approaches. C3 effectively replaces inefficient metadata with efficient cryptography.},
+booktitle = {MICRO-54: 54th Annual IEEE/ACM International Symposium on Microarchitecture},
+pages = {253–267},
+numpages = {15},
+keywords = {capabilities, memory encryption, memory safety},
+location = {Virtual Event, Greece},
+series = {MICRO '21}
+}
+
+@inproceedings{egraphs-smt,
+author = {Moura, Leonardo and Bj\o{}rner, Nikolaj},
+title = {Efficient E-Matching for {SMT} Solvers},
+year = {2007},
+isbn = {9783540735946},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-540-73595-3_13},
+doi = {10.1007/978-3-540-73595-3_13},
+abstract = {Satisfiability Modulo Theories (SMT) solvers have proven highly scalable, efficient and suitable for integrating theory reasoning. However, for numerous applications from program analysis and verification, the ground fragment is insufficient, as proof obligations often include quantifiers. A well known approach for quantifier reasoning uses a matching algorithm that works against an E-graph to instantiate quantified variables. This paper introduces algorithms that identify matches on E-graphs incrementally and efficiently. In particular, we introduce an index that works on E-graphs, called <em>E-matching code trees</em>that combine features of substitution and code trees, used in saturation based theorem provers. E-matching code trees allow performing matching against several patterns simultaneously. The code trees are combined with an additional index, called the <em>inverted path index</em>, which filters E-graph terms that may potentially match patterns when the E-graph is updated. Experimental results show substantial performance improvements over existing state-of-the-art SMT solvers.},
+booktitle = {Proceedings of the 21st International Conference on Automated Deduction: Automated Deduction},
+pages = {183–198},
+numpages = {16},
+location = {Bremen, Germany},
+series = {CADE-21}
+}
+
+@article{egg-relational,
+author = {Zhang, Yihong and Wang, Yisu Remy and Willsey, Max and Tatlock, Zachary},
+title = {Relational e-matching},
+year = {2022},
+issue_date = {January 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {POPL},
+url = {https://doi.org/10.1145/3498696},
+doi = {10.1145/3498696},
+abstract = {We present a new approach to e-matching based on relational join; in particular, we apply recent database query execution techniques to guarantee worst-case optimal run time. Compared to the conventional backtracking approach that always searches the e-graph "top down", our new relational e-matching approach can better exploit pattern structure by searching the e-graph according to an optimized query plan. We also establish the first data complexity result for e-matching, bounding run time as a function of the e-graph size and output size. We prototyped and evaluated our technique in the state-of-the-art egg e-graph framework. Compared to a conventional baseline, relational e-matching is simpler to implement and orders of magnitude faster in practice.},
+journal = {Proc. ACM Program. Lang.},
+month = jan,
+articleno = {35},
+numpages = {22},
+keywords = {Relational Join Algorithms, E-matching}
+}
+
+@article{egglog,
+author = {Zhang, Yihong and Wang, Yisu Remy and Flatt, Oliver and Cao, David and Zucker, Philip and Rosenthal, Eli and Tatlock, Zachary and Willsey, Max},
+title = {Better Together: Unifying Datalog and Equality Saturation},
+year = {2023},
+issue_date = {June 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {PLDI},
+url = {https://doi.org/10.1145/3591239},
+doi = {10.1145/3591239},
+abstract = {We present egglog, a fixpoint reasoning system that unifies Datalog and equality saturation (EqSat). Like Datalog, egglog supports efficient incremental execution, cooperating analyses, and lattice-based reasoning. Like EqSat, egglog supports term rewriting, efficient congruence closure, and extraction of optimized terms.  
+
+We identify two recent applications -- a unification-based pointer analysis in Datalog and an EqSat-based floating-point term rewriter -- that have been hampered by features missing from Datalog but found in EqSat or vice-versa. We evaluate our system by reimplementing those projects in egglog. The resulting systems in egglog are faster, simpler, and fix bugs found in the original systems.},
+journal = {Proc. ACM Program. Lang.},
+month = jun,
+articleno = {125},
+numpages = {25},
+keywords = {Datalog, Equality saturation, Program optimization, Rewrite systems}
+}
+
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+
+@inproceedings{veribetrkv,
+  author    = {Hance, Travis and Lattuada, Andrea and Hawblitzel, Chris and Howell, Jon and Johnson, Rob and Parno, Bryan},
+  booktitle = {Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  code      = {https://github.com/secure-foundations/veribetrkv-osdi2020},
+  month     = {November},
+  title     = {Storage Systems are Distributed Systems (So Verify Them That Way!)},
+  year      = {2020},
+  note      = {Accessed Feb. 2025}
+}
+
+@phdthesis{quantifier-triggers,
+  author  = {Nelson, Charles Gregory},
+  title   = {Techniques for Program Verification},
+  year    = {1980},
+  school  = {Stanford University},
+  address = {Stanford, CA, USA},
+  note    = {AAI8011683}
+}
+
+@inproceedings{moskal2009triggers,
+  author     = {Moskal, Micha\l{}},
+  title      = {Programming with Triggers},
+  year       = {2009},
+  xisbn      = {9781605584843},
+  xpublisher = {Association for Computing Machinery},
+  xaddress   = {New York, NY, USA},
+  xurl       = {https://doi.org/10.1145/1670412.1670416},
+  xdoi       = {10.1145/1670412.1670416},
+  xabstract  = {We give a case study for a Satisfiability Modulo Theories (SMT) solver usage in functional verification of a real world operating system. In particular, we present a view of the E-matching pattern annotations on quantified formulas as a kind of logic programming language, used to encode semantics of the programming language undergoing verification. We postulate a few encoding patterns to be benchmark problems for a possible E-matching alternative. We also describe features required from the SMT solver in deductive software verification scenarios.},
+  booktitle  = {Proceedings of the Workshop on Satisfiability Modulo Theories},
+  xpages     = {20–29},
+  xnumpages  = {10},
+  xkeywords  = {e-matching, SMT, triggers, program verification, axiomatizations},
+  xlocation  = {Montreal, Canada},
+  xseries    = {SMT '09}
+}
+
+@article{lifty-lh,
+  author     = {Polikarpova, Nadia and Stefan, Deian and Yang, Jean and Itzhaky, Shachar and Hance, Travis and Solar-Lezama, Armando},
+  title      = {Liquid Information Flow Control},
+  year       = {2020},
+  issue_date = {August 2020},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {4},
+  number     = {ICFP},
+  url        = {https://doi.org/10.1145/3408987},
+  doi        = {10.1145/3408987},
+  abstract   = {We present Lifty, a domain-specific language for
+                data-centric applications that manipulate sensitive
+                data. A Lifty programmer annotates the sources of
+                sensitive data with declarative security policies,
+                and the language statically and automatically
+                verifies that the application handles the data
+                according to the policies. Moreover, if verification
+                fails, Lifty suggests a provably correct repair,
+                thereby easing the programmer burden of implementing
+                policy enforcing code throughout the
+                application. The main insight behind Lifty is to
+                encode information flow control using liquid types,
+                an expressive yet decidable type system. Liquid
+                types enable fully automatic checking of complex,
+                data dependent policies, and power our repair
+                mechanism via type-driven error localization and
+                patch synthesis. Our experience using Lifty to
+                implement three case studies from the literature
+                shows that (1) the Lifty policy language is
+                sufficiently expressive to specify many real-world
+                policies, (2) the Lifty type checker is able to
+                verify secure programs and find leaks in insecure
+                programs quickly, and (3) even if the programmer
+                leaves out all policy enforcing code, the Lifty
+                repair engine is able to patch all leaks
+                automatically within a reasonable time.},
+  journal    = {Proc. ACM Program. Lang.},
+  month      = {aug},
+  articleno  = {105},
+  numpages   = {30},
+  keywords   = {information flow control, program synthesis, liquid types}
+}
+
+@article{real-lh,
+  author     = {Vazou, Niki and Seidel, Eric L. and Jhala, Ranjit},
+  title      = {LiquidHaskell: Experience with Refinement Types in the Real World},
+  year       = {2014},
+  issue_date = {December 2014},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {49},
+  number     = {12},
+  issn       = {0362-1340},
+  url        = {https://doi.org/10.1145/2775050.2633366},
+  doi        = {10.1145/2775050.2633366},
+  journal    = {SIGPLAN Not.}
+}
+
+@inproceedings{AstraVer,
+  title     = {Deductive Verification of Unmodified Linux Kernel Library Functions},
+  author    = {Denis Valentinovich Efremov and Mikhail Usamovich Mandrykin and Alexey Vladimirovich Khoroshilov},
+  booktitle = {ISoLA},
+  year      = {2018}
+}
+
+@article{ru-lh,
+  author     = {Handley, Martin A. T. and Vazou, Niki and Hutton, Graham},
+  title      = {Liquidate Your Assets: Reasoning about Resource Usage in Liquid Haskell},
+  year       = {2019},
+  issue_date = {January 2020},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {4},
+  number     = {POPL},
+  url        = {https://doi.org/10.1145/3371092},
+  doi        = {10.1145/3371092},
+  journal    = {Proc. ACM Program. Lang.},
+  month      = {dec},
+  articleno  = {24},
+  numpages   = {27},
+  keywords   = {refinement types, resource analysis, static verification}
+}
+
+@inproceedings{sp-old,
+  author    = {Jackson, Paul B. and Ellis, Bill J. and Sharp, Kathleen},
+  title     = {Using {SMT} Solvers to Verify High-Integrity Programs},
+  year      = {2007},
+  isbn      = {9781595938794},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/1345169.1345177},
+  doi       = {10.1145/1345169.1345177},
+  booktitle = {Proceedings of the Second Workshop on Automated Formal Methods},
+  pages     = {60-68},
+  numpages  = {9},
+  keywords  = {SMT solver, Ada, SAT modulo theories solver, SPARK},
+  location  = {Atlanta, Georgia},
+  series    = {AFM '07}
+}
+
+@inproceedings{sp-fs,
+  title     = {Development and Verification of a Flight Stack for a High-Altitude Glider in Ada/SPARK 2014},
+  author    = {Martin Becker and Emanuel Regnath and Samarjit Chakraborty},
+  booktitle = {SAFECOMP},
+  year      = {2017}
+}
+
+@inproceedings{sp-rn,
+  author    = {Trojanek, Piotr and Eder, Kerstin},
+  booktitle = {2014 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  title     = {Verification and testing of mobile robot navigation algorithms: A case study in SPARK},
+  year      = {2014},
+  volume    = {},
+  number    = {},
+  pages     = {1489-1494},
+  doi       = {10.1109/IROS.2014.6942753}
+}
+
+@inproceedings{ironclad,
+  author    = {Hawblitzel, Chris and Howell, Jon and Lorch, Jacob R. and Narayan, Arjun and Parno, Bryan and Zhang, Danfeng and Zill, Brian},
+  booktitle = {Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  code      = {https://github.com/Microsoft/Ironclad/blob/master/ironclad-apps/README.md},
+  month     = {October},
+  title     = {Ironclad {Apps}: End-to-End Security via Automated Full-System Verification},
+  year      = {2014}
+}
+
+@inproceedings{ironfleet,
+  title     = {{IronFleet}: Proving Practical Distributed Systems Correct},
+  author    = {Hawblitzel, Chris and Howell, Jon and Kapritsos, Manos and Lorch, Jacob R and Parno, Bryan and Roberts, Michael L and Setty, Srinath and Zill, Brian},
+  booktitle = {Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)},
+  xpages    = {1--17},
+  year      = {2015}
+}
+
+@inproceedings{komodo,
+  title     = {{Komodo}: Using Verification to Disentangle Secure-Enclave Hardware from Software},
+  author    = {Ferraiuolo, Andrew and Baumann, Andrew and Hawblitzel, Chris and Parno, Bryan},
+  booktitle = {Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)},
+  xpages    = {287--305},
+  year      = {2017},
+  doi = {10.1145/3132747.3132782},
+}
+
+@inproceedings{dfvbkv,
+  title     = {{Storage Systems are Distributed Systems (So Verify Them That Way!)}},
+  author    = {Hance, Travis and Lattuada, Andrea and Hawblitzel, Chris and Howell, Jon and Johnson, Rob and Parno, Bryan},
+  booktitle = {Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  xpages    = {99--115},
+  year      = {2020}
+}
+
+@inproceedings{linear-dafny,
+  author    = {Li, Jialin and Lattuada, Andrea and Zhou, Yi and Cameron, Jonathan and Howell, Jon and Parno, Bryan and Hawblitzel, Chris},
+  booktitle = {Proceedings of the ACM Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)},
+  month     = {December},
+  title     = {Linear Types for Large-Scale Systems Verification},
+  year      = {2022}
+}
+}
+
+@inproceedings{quic-record,
+  author    = {Delignat-Lavaud, Antoine and Fournet, Cédric and Parno, Bryan and Protzenko, Jonathan and Ramananandro, Tahina and Bosamiya, Jay and Lallemand, Joseph and Rakotonirina, Itsaka and Zhou, Yi},
+  booktitle = {Proceedings of the IEEE Symposium on Security and Privacy},
+  code      = {https://github.com/secure-foundations/everquic-dafny},
+  month     = {May},
+  title     = {A Security Model and Fully Verified Implementation for the {IETF QUIC} Record Layer},
+  year      = {2021}
+}
+
+@inproceedings{wasm-sandboxing,
+  author    = {Bosamiya, Jay and Lim, Wen Shih and Parno, Bryan},
+  booktitle = {Proceedings of the USENIX Security Symposium},
+  code      = {https://github.com/secure-foundations/provably-safe-sandboxing-wasm-usenix22},
+  month     = {August},
+  title     = {{Provably-Safe Multilingual Software Sandboxing using WebAssembly}},
+  year      = {2022}
+}
+
+@inproceedings{dice-star,
+  author    = {Zhe Tao and
+               Aseem Rastogi and
+               Naman Gupta and
+               Kapil Vaswani and
+               Aditya V. Thakur},
+  title     = {DICE*: A Formally Verified Implementation of DICE Measured Boot},
+  booktitle = {Proceedings of the USENIX Security Symposium},
+  year      = 2021,
+  month     = {Aug},
+}
+  % xurl      = {https://www.microsoft.com/en-us/research/publication/dice-a-formally-verified-implementation-of-dice-measured-boot/}
+
+
+@inproceedings{whacl,
+  author    = {J. Protzenko and B. Beurdouche and D. Merigoux and K. Bhargavan},
+  booktitle = {2019 IEEE Symposium on Security and Privacy},
+  title     = {Formally Verified Cryptographic Web Applications in {WebAssembly}},
+  year      = {2019},
+  doi       = {10.1109/SP.2019.00064},
+  url       = {https://eprint.iacr.org/2019/542.pdf},
+  issn      = {CFP19020-ART},
+  month     = {}
+}
+
+@inproceedings{hacl,
+  title     = {{HACL}*: A verified modern cryptographic library},
+  author    = {Zinzindohou{\'e}, Jean-Karim and Bhargavan, Karthikeyan and Protzenko, Jonathan and Beurdouche, Benjamin},
+  booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+  pages     = {1789--1806},
+  year      = {2017}
+}
+
+@inproceedings{hacln,
+  author    = {Polubelova, Marina and Bhargavan, Karthikeyan and Protzenko, Jonathan and Beurdouche, Benjamin and Fromherz, Aymeric and Kulatova, Natalia and Zanella-Béguelin, Santiago},
+  booktitle = {Proceedings of the ACM Conference on Computer and Communications Security (CCS)},
+  month     = {October},
+  title     = {{HACLxN}: Verified Generic {SIMD} Crypto (For All Your Favorite Platforms)},
+  year      = {2020}
+}
+
+@misc{asn1star,
+  author = {Haobin Ni and
+            Antoine Delignat-Lavaud and
+            C\'edric Fournet and
+            Tahina Ramananandro and
+            Nikhil Swamy},
+  title  = {ASN1*: Provably Correct Non-Malleable Parsing for ASN.1 DER},
+  year   = 2022,
+  month  = {September},
+  url    = {https://www.fstar-lang.org/papers/asn1star.pdf},
+  note   = {In submission}
+}
+
+@inproceedings{hyperkernel,
+  title     = {Hyperkernel: Push-button verification of an OS kernel},
+  author    = {Nelson, Luke and Sigurbjarnarson, Helgi and Zhang, Kaiyuan and Johnson, Dylan and Bornholt, James and Torlak, Emina and Wang, Xi},
+  booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles},
+  pages     = {252--269},
+  year      = {2017}
+}
+
+@inproceedings{vbpf,
+  author    = {Luke Nelson and Jacob Van Geffen and Emina Torlak and Xi Wang},
+  title     = {Specification and verification in the field: Applying formal methods to {BPF} just-in-time compilers in the Linux kernel},
+  booktitle = {14th USENIX Symposium on Operating Systems Design and Implementation (OSDI 20)},
+  year      = {2020},
+  isbn      = {978-1-939133-19-9},
+  pages     = {41--61},
+  url       = {https://www.usenix.org/conference/osdi20/presentation/nelson},
+  publisher = {USENIX Association},
+  month     = nov
+}
+
+@inproceedings{rosette,
+  author    = {Torlak, Emina and Bodik, Rastislav},
+  title     = {Growing Solver-Aided Languages with Rosette},
+  year      = {2013},
+  isbn      = {9781450324724},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/2509578.2509586},
+  doi       = {10.1145/2509578.2509586},
+  abstract  = {SAT and SMT solvers have automated a spectrum of
+               programming tasks, including program synthesis, code
+               checking, bug localization, program repair, and
+               programming with oracles. In principle, we obtain
+               all these benefits by translating the program (once)
+               to a constraint system understood by the solver. In
+               practice, however, compiling a language to logical
+               formulas is a tricky process, complicated by having
+               to map the solution back to the program level and
+               extend the language with new solver-aided
+               constructs, such as symbolic holes used in
+               synthesis.This paper introduces ROSETTE, a framework
+               for designing solver-aided languages. ROSETTE is
+               realized as a solver-aided language embedded in
+               Racket, from which it inherits extensive support for
+               meta-programming. Our framework frees designers from
+               having to compile their languages to constraints:
+               new languages, and their solver-aided constructs,
+               are defined by shallow (library-based) or deep
+               (interpreter-based) embedding in ROSETTE itself.We
+               describe three case studies, by ourselves and
+               others, of using ROSETTE to implement languages and
+               synthesizers for web scraping, spatial programming,
+               and superoptimization of bitvector programs.},
+  booktitle = {Proceedings of the 2013 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming \&; Software},
+  pages     = {135-152},
+  numpages  = {18},
+  keywords  = {solver-aided languages},
+  location  = {Indianapolis, Indiana, USA},
+  series    = {Onward! 2013}
+}
+
+@inproceedings{serval,
+  author     = {Nelson, Luke and Bornholt, James and Gu, Ronghui and Baumann, Andrew and Torlak, Emina and Wang, Xi},
+  title      = {{Scaling Symbolic Evaluation for Automated Verification of Systems Code with Serval}},
+  year       = {2019},
+  isbn       = {9781450368735},
+  xpublisher = {Association for Computing Machinery},
+  xaddress   = {New York, NY, USA},
+  xurl       = {https://doi.org/10.1145/3341301.3359641},
+  doi        = {10.1145/3341301.3359641},
+  booktitle  = {Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)},
+  xpages     = {225-242},
+  xnumpages  = {18},
+  xlocation  = {Huntsville, Ontario, Canada},
+  xseries    = {SOSP '19}
+}
+
+@inproceedings{ivy,
+  title     = {Ivy: safety verification by interactive generalization},
+  author    = {Padon, Oded and McMillan, Kenneth L and Panda, Aurojit and Sagiv, Mooly and Shoham, Sharon},
+  booktitle = {Proceedings of the 37th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages     = {614--630},
+  year      = {2016}
+}
+
+@inproceedings{vale,
+  title     = {Vale: Verifying High-Performance Cryptographic Assembly Code.},
+  author    = {Bond, Barry and Hawblitzel, Chris and Kapritsos, Manos and Leino, K Rustan M and Lorch, Jacob R and Parno, Bryan and Rane, Ashay and Setty, Srinath TV and Thompson, Laure},
+  booktitle = {USENIX Security Symposium},
+  volume    = {152},
+  year      = {2017}
+}
+
+@inproceedings{fm-aws,
+  author    = {Cook, Byron},
+  editor    = {Chockler, Hana
+               and Weissenbacher, Georg},
+  title     = {Formal Reasoning About the Security of Amazon Web Services},
+  booktitle = {Computer Aided Verification},
+  year      = {2018},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {38--47},
+  isbn      = {978-3-319-96145-3}
+}
+
+@inproceedings{everparse,
+  author    = {Tahina Ramananandro and Antoine Delignat-Lavaud and Cedric Fournet and Nikhil Swamy and Tej Chajed and Nadim Kobeissi and Jonathan Protzenko},
+  title     = {{EverParse}: Verified Secure {Zero-Copy} Parsers for Authenticated Message Formats},
+  booktitle = {28th USENIX Security Symposium (USENIX Security 19)},
+  year      = {2019},
+  address   = {Santa Clara, CA},
+  publisher = {USENIX Association},
+  month     = aug
+}
+
+@inproceedings{evercrypt,
+  author    = {Protzenko, Jonathan and Parno, Bryan and Fromherz, Aymeric and Hawblitzel, Chris and Polubelova, Marina and Bhargavan, Karthikeyan and Beurdouche, Benjamin and Choi, Joonwon and Delignat-Lavaud, Antoine and Fournet, Cédric and Kulatova, Natalia and Ramananandro, Tahina and Rastogi, Aseem and Swamy, Nikhil and Wintersteiger, Christoph and Zanella-Beguelin, Santiago},
+  booktitle = {Proceedings of the IEEE Symposium on Security and Privacy},
+  code      = {https://github.com/project-everest/hacl-star/tree/master/providers/evercrypt},
+  month     = {May},
+  title     = {{EverCrypt: A Fast, Verified, Cross-Platform Cryptographic Provider}},
+  year      = {2020}
+}
+
+@inproceedings{saw,
+  title     = {SAW: the software analysis workbench},
+  author    = {Carter, Kyle and Foltzer, Adam and Hendrix, Joe and Huffman, Brian and Tomb, Aaron},
+  booktitle = {Proceedings of the 2013 ACM SIGAda annual conference on High integrity language technology},
+  pages     = {15--18},
+  year      = {2013}
+}
+
+@inproceedings{smtlib,
+  title     = {{The {SMT-lib} Standard: Version 2.0}},
+  author    = {Barrett, Clark and Stump, Aaron and Tinelli, Cesare and others},
+  booktitle = {Proceedings of the Workshop on Satisfiability Modulo Theories},
+  xpages    = {14},
+  year      = {2010}
+}
+
+@Incollection{smt,
+author="Barrett, Clark
+and Tinelli, Cesare",
+title={Satisfiability Modulo Theories},
+booktitle={Handbook of Model Checking},
+publisher="Springer International Publishing",
+year="2018",
+pages="305--343",
+isbn="978-3-319-10575-8",
+doi="10.1007/978-3-319-10575-8_11",
+}
+% address="Cham",
+% url="https://doi.org/10.1007/978-3-319-10575-8_11"
+% editor="Clarke, Edmund M.
+and Henzinger, Thomas A.
+and Veith, Helmut
+and Bloem, Roderick",
+
+
+
+
+
+@inproceedings{z3,
+  title         = {Z3: An Efficient {SMT} Solver},
+  author        = {De Moura, Leonardo and Bj{\o}rner, Nikolaj},
+  booktitle     = {Tools and Algorithms for the Construction and Analysis of Systems (TACAS)},
+  xpages        = {337--340},
+  year          = {2008},
+  xorganization = {Springer},
+  doi = {10.1007/978-3-540-78800-3_24}
+}
+
+@inproceedings{cvc5,
+  title         = {{cvc5: A Versatile and Industrial-Strength {SMT} Solver}},
+  author        = {Barbosa, Haniel and Barrett, Clark and Brain, Martin and Kremer, Gereon and Lachnitt, Hanna and Mann, Makai and Mohamed, Abdalrhman and Mohamed, Mudathir and Niemetz, Aina and N{\"o}tzli, Andres and others},
+  booktitle     = {Tools and Algorithms for the Construction and Analysis of Systems (TACAS)},
+  xpages        = {415--442},
+  year          = {2022},
+  xorganization = {Springer},
+  doi = {10.1007/978-3-030-99524-9_24}
+}
+
+@article{hoare,
+  title     = {{An Axiomatic Basis for Computer Programming}},
+  author    = {Hoare, Charles Antony Richard},
+  journal   = {Communications of the ACM},
+  volume    = {12},
+  number    = {10},
+  xpages    = {576--580},
+  year      = {1969},
+  publisher = {ACM New York, NY, USA}
+}
+
+@article{fmvc,
+  title     = {Formal methods: Practice and experience},
+  author    = {Woodcock, Jim and Larsen, Peter Gorm and Bicarregui, Juan and Fitzgerald, John},
+  journal   = {ACM computing surveys (CSUR)},
+  volume    = {41},
+  number    = {4},
+  pages     = {1--36},
+  year      = {2009},
+  publisher = {ACM New York, NY, USA}
+}
+
+@inproceedings{transformers,
+  author    = {Bosamiya, Jay and Gibson, Sydney and Li, Yao and Parno, Bryan and Hawblitzel, Chris},
+  booktitle = {In Proceedings of the Conference on Verified Software: Theories, Tools, and Experiments (VSTTE)},
+  month     = {July},
+  title     = {Verified Transformations and {Hoare} Logic: Beautiful Proofs for Ugly Assembly Language},
+  year      = {2020}
+}
+
+@inproceedings{everparse3d,
+  author          = {Nikhil Swamy and
+                     Tahina Ramananandro and
+                     Aseem Rastogi and
+                     Irina Spiridonova and
+                     Haobin Ni and
+                     Dmitry Malloy and
+                     Juan Vazquez and
+                     Michael Tang and
+                     Omar Cardona and
+                     Arti Gupta},
+  title           = {{Hardening Attack Surfaces with Formally Proven Binary Format Parsers}},
+  booktitle       = {Proceedings of the ACM Conference on Programming Language Design and Implementation (PLDI)},
+  xshortbooktitle = {PLDI},
+  year            = 2022,
+  month           = {June},
+  url             = {https://www.fstar-lang.org/papers/EverParse3D.pdf}
+}
+
+@inproceedings{bvcryptoline,
+  author    = {Tsai, Ming-Hsien and Wang, Bow-Yaw and Yang, Bo-Yin},
+  title     = {Certified Verification of Algebraic Properties on Low-Level Mathematical Constructs in Cryptographic Programs},
+  year      = {2017},
+  isbn      = {9781450349468},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3133956.3134076},
+  doi       = {10.1145/3133956.3134076},
+  booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+  pages     = {1973-1987},
+  numpages  = {15},
+  keywords  = {low-level implementation, verification, cryptography},
+  location  = {Dallas, Texas, USA},
+  series    = {CCS '17}
+}
+
+@inproceedings{signed-cryptoline,
+  author     = {Fu, Yu-Fu and Liu, Jiaxiang and Shi, Xiaomu and Tsai, Ming-Hsien and Wang, Bow-Yaw and Yang, Bo-Yin},
+  title      = {{Signed Cryptographic Program Verification with Typed CryptoLine}},
+  year       = {2019},
+  isbn       = {9781450367479},
+  xpublisher = {Association for Computing Machinery},
+  xaddress   = {New York, NY, USA},
+  url        = {https://doi.org/10.1145/3319535.3354199},
+  xdoi       = {10.1145/3319535.3354199},
+  booktitle  = {Proceedings of the ACM SIGSAC Conference on Computer and Communications Security (CCS)},
+  xpages     = {1591-1606},
+  xnumpages  = {16},
+  keywords   = {model checking, cryptographic programs, formal verification},
+  xlocation  = {London, United Kingdom},
+  xseries    = {CCS '19}
+}
+
+@inproceedings{verx,
+  title         = {{Verx: Safety Verification of Smart Contracts}},
+  author        = {Permenev, Anton and Dimitrov, Dimitar and Tsankov, Petar and Drachsler-Cohen, Dana and Vechev, Martin},
+  booktitle     = {Proceedings of the IEEE Symposium on Security and Privacy},
+  xpages        = {1661--1677},
+  year          = {2020},
+  xorganization = {IEEE}
+}
+
+@inproceedings{p4v,
+  author    = {Liu, Jed and Hallahan, William and Schlesinger, Cole and Sharif, Milad and Lee, Jeongkeun and Soul\'{e}, Robert and Wang, Han and Ca\c{s}caval, C\u{a}lin and McKeown, Nick and Foster, Nate},
+  title     = {{P4v: Practical Verification for Programmable Data Planes}},
+  year      = {2018},
+  isbn      = {9781450355674},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3230543.3230582},
+  doi       = {10.1145/3230543.3230582},
+  booktitle = {Proceedings of ACM SIGCOMM},
+  pages     = {490-503},
+  numpages  = {14},
+  keywords  = {verification, programmable data planes, P4},
+  location  = {Budapest, Hungary},
+  xseries   = {SIGCOMM '18}
+}
+
+@inproceedings{butterfly,
+  author     = {Leino, K. R. M.
+                and Pit-Claudel, Cl{\'e}ment},
+  editor     = {Chaudhuri, Swarat
+                and Farzan, Azadeh},
+  title      = {Trigger Selection Strategies to Stabilize Program Verifiers},
+  booktitle  = {Proceedings of the International Conference on Computer Aided Verification (CAV)},
+  year       = {2016},
+  xpublisher = {Springer International Publishing},
+  xaddress   = {Cham},
+  xpages     = {361--381},
+  isbn       = {978-3-319-41528-4}
+}
+
+@inproceedings{dafny,
+  author     = {Leino, K. Rustan M.},
+  xeditor     = {Clarke, Edmund M.
+                and Voronkov, Andrei},
+  title      = {{Dafny}: An Automatic Program Verifier for Functional Correctness},
+  booktitle  = {Logic for Programming, Artificial Intelligence, and Reasoning (LPAR)},
+  year       = {2010},
+  xpublisher = {Springer Berlin Heidelberg},
+  xaddress   = {Berlin, Heidelberg},
+  xpages     = {348--370},
+  isbn       = {978-3-642-17511-4}
+}
+
+@inproceedings{fstar,
+  author    = {Swamy, Nikhil and Hri\c{t}cu, C\u{a}t\u{a}lin and Keller, Chantal and Rastogi, Aseem and Delignat-Lavaud, Antoine and Forest, Simon and Bhargavan, Karthikeyan and Fournet, C\'{e}dric and Strub, Pierre-Yves and Kohlweiss, Markulf and Zinzindohoue, Jean-Karim and Zanella-B\'{e}guelin, Santiago},
+  title     = {{Dependent Types and Multi-Monadic Effects in F*}},
+  year      = {2016},
+  isbn      = {9781450335492},
+  booktitle = {Proceedings of the ACM Symposium on Principles of Programming Languages (POPL)},
+  xpages    = {256-270},
+  xnumpages = {15},
+  keywords  = {verification, effectful programming, proof assistants},
+  xlocation = {St. Petersburg, FL, USA},
+  xseries   = {POPL '16}
+}
+
+@inproceedings{autoproof,
+  author    = {Julian Tschannen and Carlo A. Furia and Martin Nordio and
+               Nadia Polikarpova},
+  title     = {AutoProof: Auto-active Functional Verification of
+               Object-oriented Programs},
+  booktitle = {21st International Conference on Tools and Algorithms for
+               the Construction and Analysis of Systems},
+  year      = {2015},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  urltopdf  = {http://se.inf.ethz.ch/people/tschannen/publications/tfnp-tacas15.pdf}
+}
+
+@inproceedings{creusot,
+  title      = {Creusot: a {Foundry} for the {Deductive}
+                {Verification} of {Rust} {Programs}},
+  shorttitle = {Creusot},
+  url        = {https://hal.inria.fr/hal-03737878},
+  abstract   = {Rust is a fairly recent programming language for
+                system programming, bringing static guarantees of
+                memory safety through a strict ownership policy. The
+                strong guarantees brought by this feature opens
+                promising progress for deductive verification, which
+                aims at proving the conformity of Rust code with
+                respect to a specification of its intended
+                behavior. We present the foundations of Creusot, a
+                tool for the formal specification and deductive
+                verification of Rust code. A rst originality comes
+                from Creusot's specification language, which
+                features a notion of prophecy to reason about memory
+                mutation, working in harmony with Rust's ownership
+                system. A second originality is how Creusot builds
+                upon Rust trait system to provide several advanced
+                abstraction features.},
+  language   = {en},
+  urldate    = {2022-12-13},
+  publisher  = {Springer Verlag},
+  author     = {Denis, Xavier and Jourdan, Jacques-Henri and Marché, Claude},
+  month      = oct,
+  year       = {2022},
+  file       = {Full Text PDF:/Users/yoshi/Zotero/storage/2HZ44KSZ/Denis et al. - 2022 - Creusot a Foundry for the Deductive Verification .pdf:application/pdf}
+}
+
+@article{frama-c,
+  author     = {Kirchner, Florent and Kosmatov, Nikolai and Prevosto,
+                Virgile and Signoles, Julien and Yakobowski, Boris},
+  title      = {Frama-C: A Software Analysis Perspective},
+  year       = {2015},
+  issue_date = {May 2015},
+  publisher  = {Springer-Verlag},
+  address    = {Berlin, Heidelberg},
+  volume     = {27},
+  number     = {3},
+  issn       = {0934-5043},
+  url        = {https://doi.org/10.1007/s00165-014-0326-7},
+  doi        = {10.1007/s00165-014-0326-7},
+  abstract   = {Frama-C is a source code analysis platform that aims at
+                conducting verification of industrial-size C
+                programs. It provides its users with a collection of
+                plug-ins that perform static analysis, deductive
+                verification, and testing, for safety- and
+                security-critical software. Collaborative
+                verification across cooperating plug-ins is enabled
+                by their integration on top of a shared kernel and
+                datastructures, and their compliance to a common
+                specification language. This foundational article
+                presents a consolidated view of the platform, its
+                main and composite analyses, and some of its
+                industrial achievements.},
+  journal    = {Form. Asp. Comput.},
+  month      = {may},
+  pages      = {573-609},
+  numpages   = {37},
+  keywords   = {Formal verification, C, Dynamic analysis, Static analysis}
+}
+
+@inproceedings{why3,
+  topics                   = {team},
+  hal                      = {http://hal.inria.fr/hal-00790310},
+  author                   = {Fran\c{c}ois Bobot and Jean-Christophe Filli\^atre and
+                              Claude March\'e and Andrei Paskevich},
+  title                    = {Why3: Shepherd Your Herd of Provers},
+  booktitle                = {Boogie 2011: First International Workshop on Intermediate Verification Languages},
+  year                     = 2011,
+  address                  = {Wroc\l{}aw, Poland},
+  month                    = {August},
+  pages                    = {53--64},
+  note                     = {\url{https://hal.inria.fr/hal-00790310}},
+  x-international-audience = {yes},
+  x-proceedings            = {yes},
+  x-cle-support            = {BOOGIE},
+  x-type                   = {actes_aux},
+  x-support                = {article},
+  x-equipes                = {demons PROVAL},
+  keywords                 = {Why3},
+  abstract                 = {Why3 is the next generation of the
+                              Why software verification platform.
+                              Why3 clearly separates the purely logical
+                              specification part from generation of verification conditions for programs.
+                              This article focuses on the former part.
+                              Why3 comes with a new enhanced language of
+                              logical specification. It features a rich library of
+                              proof task transformations that can be chained to produce a suitable
+                              input for a large set of theorem provers, including SMT solvers,
+                              TPTP provers, as well as interactive proof assistants.}
+}
+
+@inproceedings{nagini,
+  author    = {Eilers, Marco
+               and M{\"u}ller, Peter},
+  editor    = {Chockler, Hana
+               and Weissenbacher, Georg},
+  title     = {Nagini: A Static Verifier for Python},
+  booktitle = {Computer Aided Verification},
+  year      = {2018},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {596--603},
+  isbn      = {978-3-319-96145-3}
+}
+
+
+@inproceedings{viper,
+  author    = {M\"{u}ller, Peter and Schwerhoff, Malte and Summers, Alexander J.},
+  title     = {Viper: A Verification Infrastructure for Permission-Based Reasoning},
+  year      = {2016},
+  isbn      = {9783662491218},
+  publisher = {Springer-Verlag},
+  address   = {Berlin, Heidelberg},
+  booktitle = {Proceedings of the 17th International Conference on
+               Verification, Model Checking, and Abstract
+               Interpretation - Volume 9583},
+  pages     = {41-62},
+  numpages  = {22},
+  location  = {St. Petersburg, FL, USA},
+  series    = {VMCAI 2016}
+}
+
+@inproceedings{prusti,
+  title      = {Leveraging {R}ust Types for Modular Specification and Verification},
+  author     = {V. Astrauskas and P. M\"uller and F. Poli and A. J. Summers},
+  booktitle  = {Object-Oriented Programming Systems, Languages, and
+                Applications (OOPSLA)},
+  journal    = {Proc. ACM Program. Lang.},
+  issue_date = {October 2019},
+  volume     = {3},
+  number     = {OOPSLA},
+  year       = {2019},
+  pages      = {147:1--147:30},
+  url        = {http://doi.acm.org/10.1145/3360573},
+  urltext    = {[Publisher]},
+  doi        = {10.1145/3360573},
+  publisher  = {ACM}
+}
+
+@inproceedings{gobra,
+  author    = {F. A. Wolf and L. Arquint and M. Clochard and
+               W. Oortwijn and J. C. Pereira and P. M\"uller},
+  title     = {{G}obra: Modular Specification and Verification of Go Programs},
+  booktitle = {Computer Aided Verification (CAV)},
+  editor    = {Silva, Alexandra and Leino, K. Rustan M.},
+  series    = {LNCS},
+  volume    = {12759},
+  publisher = {Springer International Publishing},
+  pages     = {367--379},
+  year      = {2021},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-030-81685-8_17},
+  urltext   = {[Publisher]}
+}
+
+@inproceedings{smack,
+  title     = {SMACK Software Verification Toolchain},
+  author    = {Montgomery Carter and Shaobo He and Jonathan Whitaker and
+               Zvonimir Rakamaric and Michael Emmi},
+  booktitle = {Proceedings of the 38th IEEE/ACM International
+               Conference on Software Engineering (ICSE) Companion},
+  publisher = {ACM},
+  editor    = {Willem Visser and Laurie Williams},
+  pages     = {589--592},
+  doi       = {10.1145/2889160.2889163},
+  year      = {2016}
+}
+
+@inproceedings{vcc,
+  author    = {Schulte, Wolfram},
+  title     = {VCC: Contract-based Modular Verification of Concurrent C},
+  booktitle = {31st International Conference on Software Engineering, ICSE 2009},
+  year      = {2008},
+  month     = {January},
+  abstract  = {Most system level software is written in C and executed concurrently. Because such software is often critical for system reliability, it is an ideal target for formal verification.
+               Annotated C and the Verified C Compiler (VCC) form the first modular sound verification methodology for concurrent C that scales to real-world production code. VCC
+               is integrated in Microsoft Visual Studio and it comes with support for verification debugging: an explorer for counterexamples of failed proofs helps to find errors in code or specifications, and a prover log analyzer helps debugging proof attempts that exhaust available resources (memory, time). VCC is currently used to verify the core of Microsoft
+               Hyper-V, consisting of 50,000 lines of system-level C code.},
+  publisher = {IEEE Computer Society},
+  edition   = {31st International Conference on Software Engineering, ICSE 2009}
+}
+
+@inproceedings{verifast,
+  author    = {Jacobs, Bart
+               and Smans, Jan
+               and Philippaerts, Pieter
+               and Vogels, Fr{\'e}d{\'e}ric
+               and Penninckx, Willem
+               and Piessens, Frank},
+  editor    = {Bobaru, Mihaela
+               and Havelund, Klaus
+               and Holzmann, Gerard J.
+               and Joshi, Rajeev},
+  title     = {VeriFast: A Powerful, Sound, Predictable, Fast Verifier for C and Java},
+  booktitle = {NASA Formal Methods},
+  year      = {2011},
+  publisher = {Springer Berlin Heidelberg},
+  address   = {Berlin, Heidelberg},
+  pages     = {41--55},
+  isbn      = {978-3-642-20398-5}
+}
+
+@article{openjml,
+  doi       = {10.4204/eptcs.149.8},
+  url       = {https://doi.org/10.4204\%2Feptcs.149.8},
+  year      = 2014,
+  month     = {apr},
+  publisher = {Open Publishing Association},
+  volume    = {149},
+  pages     = {79--92},
+  author    = {David R. Cok},
+  title     = {{OpenJML}: Software verification for Java 7 using {JML},
+               {OpenJDK},
+               and Eclipse},
+  journal   = {Electronic Proceedings in Theoretical Computer Science}
+}
+
+@inproceedings{specsharp,
+  author    = {Barnett, Mike and Leino, K. Rustan M. and Schulte, Wolfram},
+  title     = {The {Spec}\# Programming System: An Overview},
+  year      = {2004},
+  isbn      = {3540242872},
+  publisher = {Springer-Verlag},
+  address   = {Berlin, Heidelberg},
+  booktitle = {Proceedings of the 2004 International Conference on Construction and Analysis of Safe, Secure, and Interoperable Smart Devices},
+  pages     = {49-69},
+  numpages  = {21},
+  location  = {Marseille, France},
+  series    = {CASSIS'04}
+}
+
+@inproceedings{dynamicframes,
+  title         = {{Dynamic Frames: Support for Framing, Dependencies and Sharing Without Restrictions}},
+  author        = {Kassios, Ioannis T},
+  booktitle     = {Proceedings on the International Symposium on Formal Methods (FM)},
+  xpages        = {268--283},
+  year          = {2006},
+  xorganization = {Springer}
+}
+
+@inproceedings{lineartypes,
+  title        = {Linear types can change the world!},
+  author       = {Wadler, Philip},
+  booktitle    = {Programming concepts and methods},
+  volume       = {3},
+  number       = {4},
+  pages        = {5},
+  year         = {1990},
+  organization = {Citeseer}
+}
+
+@article{aeneas,
+  author     = {Ho, Son and Protzenko, Jonathan},
+  title      = {Aeneas: Rust Verification by Functional Translation},
+  year       = {2022},
+  issue_date = {August 2022},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {6},
+  number     = {ICFP},
+  url        = {https://doi.org/10.1145/3547647},
+  doi        = {10.1145/3547647},
+  journal    = {Proc. ACM Program. Lang.},
+  month      = {aug},
+  articleno  = {116},
+  numpages   = {31},
+  keywords   = {functional translation, Rust, verification}
+}
+
+@misc{dafny-random,
+  title        = {{Debugging Unstable Verification}},
+  howpublished = {\url{http://dafny.org/dafny/DafnyRef/DafnyRef.html\#1365-debugging-unstable-verification}}
+}
+
+@misc{fstar-quake,
+  title        = {{Repeating Proofs with Quake}},
+  howpublished = {\url{
+                  http://www.fstar-lang.org/tutorial/book/under_the_hood/uth_smt.html#repeating-proofs-with-quake}}
+}
+
+@techreport{dice,
+  author = {Marochko, Andrey and Mattoon, Dennis and England, Paul and Aigner, Ronald and Spiger (CELA), Rob and Thom, Stefan},
+  title  = {{Cyber-Resilient Platforms Overview}},
+  year   = {2017},
+  month  = {September},
+  url    = {https://www.microsoft.com/en-us/research/publication/cyber-resilient-platforms-overview/},
+  number = {MSR-TR-2017-40}
+}
+
+@inproceedings{incomp-bug,
+  author    = {Bringolf, Mauro and Winterer, Dominik and Su, Zhendong},
+  title     = {Finding and Understanding Incompleteness Bugs in SMT Solvers},
+  year      = {2023},
+  isbn      = {9781450394758},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3551349.3560435},
+  doi       = {10.1145/3551349.3560435},
+  abstract  = {We propose Janus, an approach for finding incompleteness bugs in SMT solvers. The key insight is to mutate SMT formulas with local weakening and strengthening rules that preserve the satisfiability of the seed formula. The generated mutants are used to test SMT solvers for incompleteness bugs, i.e., inputs on which SMT solvers unexpectedly return unknown. We realized Janus on top of the SMT solver fuzzing framework YinYang. From June to August 2021, we stress-tested the two state-of-the-art SMT solvers Z3 and CVC5 with Janus and totally reported 31 incompleteness bugs. Out of these, 26 have been confirmed as unique bugs and 19 are already fixed by the developers. Our diverse bug findings uncovered functional, regression, and performance bugs—several triggered discussions among the developers sharing their in-depth analysis.},
+  booktitle = {Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering},
+  articleno = {43},
+  numpages  = {10},
+  location  = {Rochester, MI, USA},
+  series    = {ASE '22}
+}
+
+@inproceedings{test-stringfuzz,
+  author    = {Blotsky, Dmitry
+               and Mora, Federico
+               and Berzish, Murphy
+               and Zheng, Yunhui
+               and Kabir, Ifaz
+               and Ganesh, Vijay},
+  editor    = {Chockler, Hana
+               and Weissenbacher, Georg},
+  title     = {StringFuzz: A Fuzzer for String Solvers},
+  booktitle = {Computer Aided Verification},
+  year      = {2018},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {45--51},
+  abstract  = {In this paper, we introduce StringFuzz: a modular SMT-LIB problem instance transformer and generator for string solvers. We supply a repository of instances generated by StringFuzz in SMT-LIB 2.0/2.5 format. We systematically compare Z3str3, CVC4, Z3str2, and Norn on groups of such instances, and identify those that are particularly challenging for some solvers. We briefly explain our observations and show how StringFuzz helped discover causes of performance degradations in Z3str3.},
+  isbn      = {978-3-319-96142-2}
+}
+
+@article{test-mut2,
+  author     = {Winterer, Dominik and Zhang, Chengyu and Su, Zhendong},
+  title      = {On the Unusual Effectiveness of Type-Aware Operator Mutations for Testing SMT Solvers},
+  year       = {2020},
+  issue_date = {November 2020},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {4},
+  number     = {OOPSLA},
+  url        = {https://doi.org/10.1145/3428261},
+  doi        = {10.1145/3428261},
+  abstract   = {We propose type-aware operator mutation, a simple, but unusually effective approach for testing SMT solvers. The key idea is to mutate operators of conforming types within the seed formulas to generate well-typed mutant formulas. These mutant formulas are then used as the test cases for SMT solvers. We realized type-aware operator mutation within the OpFuzz tool and used it to stress-test Z3 and CVC4, two state-of-the-art SMT solvers. Type-aware operator mutations are unusually effective: During one year of extensive testing with OpFuzz, we reported 1092 bugs on Z3’s and CVC4’s respective GitHub issue trackers, out of which 819 unique bugs were confirmed and 685 of the confirmed bugs were fixed by the developers. The detected bugs are highly diverse — we found bugs of many different types (soundness bugs, invalid model bugs, crashes, etc.), logics and solver configurations. We have further conducted an in-depth study of the bugs found by OpFuzz. The study results show that the bugs found by OpFuzz are of high quality. Many of them affect core components of the SMT solvers’ codebases, and some required major changes for the developers to fix. Among the 819 confirmed bugs found by OpFuzz,184 were soundness bugs, the most critical bugs in SMT solvers,and 489 were in the default modes of the solvers. Notably, OpFuzz found 27 critical soundness bugs in CVC4, which has proved to be a very stable SMT solver.},
+  journal    = {Proc. ACM Program. Lang.},
+  month      = {nov},
+  articleno  = {193},
+  numpages   = {25},
+  keywords   = {Fuzz testing, SMT solvers, Type-aware operator mutation}
+}
+
+@article{test-mut1,
+  author     = {Park, Jiwon and Winterer, Dominik and Zhang, Chengyu and Su, Zhendong},
+  title      = {Generative Type-Aware Mutation for Testing SMT Solvers},
+  year       = {2021},
+  issue_date = {October 2021},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {5},
+  number     = {OOPSLA},
+  url        = {https://doi.org/10.1145/3485529},
+  doi        = {10.1145/3485529},
+  abstract   = {We propose Generative Type-Aware Mutation, an effective approach for testing SMT solvers. The key idea is to realize generation through the mutation of expressions rooted with parametric operators from the SMT-LIB specification. Generative Type-Aware Mutation is a hybrid of mutation-based and grammar-based fuzzing and features an infinite mutation space—overcoming a major limitation of OpFuzz, the state-of-the-art fuzzer for SMT solvers. We have realized Generative Type-Aware Mutation in a practical SMT solver bug hunting tool, TypeFuzz. During our testing period with TypeFuzz, we reported over 237 bugs in the state-of-the-art SMT solvers Z3 and CVC4. Among these, 189 bugs were confirmed and 176 bugs were fixed. Most notably, we found 18 soundness bugs in CVC4’s default mode alone. Several of them were two years latent (7/18). CVC4 has been proved to be a very stable SMT solver and has resisted several fuzzing campaigns.},
+  journal    = {Proc. ACM Program. Lang.},
+  month      = {oct},
+  articleno  = {152},
+  numpages   = {19},
+  keywords   = {SMT solvers, Fuzz testing, Generative type-aware mutation}
+}
+
+@inproceedings{test-enum,
+  author    = {Yao, Peisen and Huang, Heqing and Tang, Wensheng and Shi, Qingkai and Wu, Rongxin and Zhang, Charles},
+  title     = {Skeletal Approximation Enumeration for SMT Solver Testing},
+  year      = {2021},
+  isbn      = {9781450385626},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3468264.3468540},
+  doi       = {10.1145/3468264.3468540},
+  abstract  = {Ensuring the equality of SMT solvers is critical due to its broad spectrum of applications in academia and industry, such as symbolic execution and program verification. Existing approaches to testing SMT solvers are either too costly or find difficulties generalizing to different solvers and theories, due to the test oracle problem. To complement existing approaches and overcome their weaknesses, this paper introduces skeletal approximation enumeration (SAE), a novel lightweight and general testing technique for all first-order theories. To demonstrate its practical utility, we have applied the SAE technique to test Z3 and CVC4, two comprehensively tested, state-of-the-art SMT solvers. By the time of writing, our approach had found 71 confirmed bugs in Z3 and CVC4,55 of which had already been fixed.},
+  booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  pages     = {1141–1153},
+  numpages  = {13},
+  keywords  = {SMT solver testing, mutation-based testing, metamorphic testing},
+  location  = {Athens, Greece},
+  series    = {ESEC/FSE 2021}
+}
+
+@inproceedings{test-murxla,
+  author    = {Niemetz, Aina
+               and Preiner, Mathias
+               and Barrett, Clark},
+  editor    = {Shoham, Sharon
+               and Vizel, Yakir},
+  title     = {Murxla: A Modular and Highly Extensible API Fuzzer for SMT Solvers},
+  booktitle = {Computer Aided Verification},
+  year      = {2022},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {92--106},
+  abstract  = {SMT solvers are highly complex pieces of software with performance, robustness, and correctness as key requirements. Complementing traditional testing techniques for these solvers with randomized stress testing has been shown to be quite effective. Recent work has showcased the value of input fuzzing for finding issues, but this approach typically does not comprehensively test a solver's API. Previous work on model-based API fuzzing was tailored to a single solver and a small subset of SMT-LIB. We present Murxla, a comprehensive, modular, and highly extensible model-based API fuzzer for SMT solvers. Murxla randomly generates valid sequences of solver API calls based on a customizable API model, with full support for the semantics and features of SMT-LIB. It is solver-agnostic but extensible to allow for solver-specific testing and supports option fuzzing, cross-checking with other solvers, translation to SMT-LIBv2, and SMT-LIBv2 input fuzzing. Our evaluation confirms its efficacy in finding issues in multiple state-of-the-art SMT solvers.},
+  isbn      = {978-3-031-13188-2}
+}
+
+@inproceedings{test-string,
+  author    = {Bugariu, Alexandra and M\"{u}ller, Peter},
+  title     = {Automatically Testing String Solvers},
+  year      = {2020},
+  isbn      = {9781450371216},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3377811.3380398},
+  doi       = {10.1145/3377811.3380398},
+  abstract  = {SMT solvers are at the basis of many applications, such as program verification, program synthesis, and test case generation. For all these applications to provide reliable results, SMT solvers must answer queries correctly. However, since they are complex, highly-optimized software systems, ensuring their correctness is challenging. In particular, state-of-the-art testing techniques do not reliably detect when an SMT solver is unsound.In this paper, we present an automatic approach for generating test cases that reveal soundness errors in the implementations of string solvers, as well as potential completeness and performance issues. We synthesize input formulas that are satisfiable or unsatisfiable by construction and use this ground truth as test oracle. We automatically apply satisfiability-preserving transformations to generate increasingly-complex formulas, which allows us to detect many errors with simple inputs and, thus, facilitates debugging.The experimental evaluation shows that our technique effectively reveals bugs in the implementation of widely-used SMT solvers and applies also to other types of solvers, such as automata-based solvers. We focus on strings here, but our approach carries over to other theories and their combinations.},
+  booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering},
+  pages     = {1459–1470},
+  numpages  = {12},
+  keywords  = {soundness testing, string solvers, SMT solvers, automatic testing},
+  location  = {Seoul, South Korea},
+  series    = {ICSE '20}
+}
+
+@article{saw-stable,
+  author  = {Dodds, Mike},
+  journal = {IEEE Security and Privacy Magazine},
+  title   = {{Formally Verifying Industry Cryptography}},
+  year    = {2022},
+  xpages  = {65-70},
+  doi     = {10.1109/MSEC.2022.3153035}
+}
+
+@inproceedings{smt-comp,
+  author     = {Barrett, Clark
+                and de Moura, Leonardo
+                and Stump, Aaron},
+  editor     = {Etessami, Kousha
+                and Rajamani, Sriram K.},
+  title      = {{SMT-COMP: Satisfiability Modulo Theories Competition}},
+  booktitle  = {Computer Aided Verification},
+  year       = {2005},
+  xpublisher = {Springer Berlin Heidelberg},
+  xaddress   = {Berlin, Heidelberg},
+  xpages     = {20--23},
+  isbn       = {978-3-540-31686-2}
+}
+
+@inproceedings{smt-scramble,
+  title     = {{Scrambling and Descrambling SMT-LIB Benchmarks}},
+  author    = {Weber, Tjark},
+  booktitle = {SMT @ IJCAR},
+  xpages    = {31--40},
+  year      = {2016}
+}
+
+@inproceedings{sat-scramble,
+  title     = {{The Effect of Scrambling CNFs}},
+  author    = {Biere, Armin and Heule, Marijn},
+  booktitle = {Proceedings of Pragmatics of SAT},
+  volume    = {59},
+  xpages    = {111--126},
+  year      = {2019}
+}
+
+@inproceedings{bepstree,
+  author    = {Brodal, Gerth Stolting and Fagerberg, Rolf},
+  title     = {{Lower Bounds for External Memory Dictionaries}},
+  year      = {2003},
+  isbn      = {0898715385},
+  booktitle = {Proceedings of the ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+  xpages    = {546–554},
+  xnumpages = {9},
+  xlocation = {Baltimore, Maryland},
+  xseries   = {SODA '03}
+}
+
+@inproceedings{dynamic,
+  title         = {{Dynamic Frames: Support for Framing, Dependencies and Sharing Without Restrictions}},
+  author        = {Kassios, Ioannis T},
+  booktitle     = {Proceedings on the International Symposium on Formal Methods (FM)},
+  xpages        = {268--283},
+  year          = {2006},
+  xorganization = {Springer}
+}
+
+@misc{vwasm-private-communication,
+  author       = {Bosamiya, Jay and Lim, Wen Shih and Parno, Bryan},
+  howpublished = {private communication},
+  year         = 2023
+}
+
+@inproceedings{amazon-s3,
+  title     = {{Using Lightweight Formal Methods to Validate a Key-Value Storage Node in Amazon S3}},
+  author    = {Bornholt, James and Joshi, Rajeev and Astrauskas, Vytautas and Cully, Brendan and Kragl, Bernhard and Markle, Seth and Sauri, Kyle and Schleit, Drew and Slatton, Grant and Tasiran, Serdar and others},
+  booktitle = {Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)},
+  xpages    = {836--850},
+  year      = {2021}
+}
+
+@inproceedings{amazon-s2n,
+  title         = {{Continuous Formal Verification of Amazon s2n}},
+  author        = {Chudnov, Andrey and Collins, Nathan and Cook, Byron and Dodds, Joey and Huffman, Brian and MacC{\'a}rthaigh, Colm and Magill, Stephen and Mertens, Eric and Mullen, Eric and Tasiran, Serdar and others},
+  booktitle     = {Proceedings of the International Conference on Computer Aided Verification (CAV)},
+  xpages        = {430--446},
+  year          = {2018},
+  xorganization = {Springer}
+}
+
+@article{sat-comp-2020,
+  title     = {{SAT Competition 2020}},
+  author    = {Froleyks, Nils and Heule, Marijn and Iser, Markus and J{\"a}rvisalo, Matti and Suda, Martin},
+  journal   = {Artificial Intelligence},
+  volume    = {301},
+  xpages    = {103572},
+  year      = {2021},
+  publisher = {Elsevier}
+}
+
+@book{probability-text-book,
+  title     = {{An Introduction to Probability Theory and its Applications, Volume 2}},
+  author    = {Feller, William},
+  volume    = {81},
+  year      = {1991},
+  publisher = {John Wiley \& Sons}
+}
+
+@inproceedings{wasm,
+  title     = {{Bringing the Web up to Speed with WebAssembly}},
+  author    = {Haas, Andreas and Rossberg, Andreas and Schuff, Derek L and Titzer, Ben L and Holman, Michael and Gohman, Dan and Wagner, Luke and Zakai, Alon and Bastien, JF},
+  booktitle = {Proceedings of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+  xpages    = {185--200},
+  year      = {2017}
+}
+
+@inproceedings{cvc4,
+  title         = {cvc4},
+  author        = {Barrett, Clark and Conway, Christopher L and Deters, Morgan and Hadarean, Liana and Jovanovi{\'c}, Dejan and King, Tim and Reynolds, Andrew and Tinelli, Cesare},
+  booktitle     = {Proceedings of the International Conference on Computer Aided Verification (CAV)},
+  xpages        = {171--177},
+  year          = {2011},
+  xorganization = {Springer}
+}
+
+@misc{mpgithub,
+  title        = {{Mariposa Public Repository}},
+  howpublished = {\url{https://github.com/secure-foundations/mariposa}},
+  note         = {Accessed: May 2023}
+}
+
+@article{wp,
+  author     = {Dijkstra, Edsger W.},
+  title      = {{Guarded Commands, Nondeterminacy and Formal Derivation of Programs}},
+  year       = {1975},
+  issue_date = {Aug. 1975},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  journal    = {Commun. ACM},
+  month      = {aug},
+  numpages   = {5}
+}
+
+@inproceedings{mariposa,
+  author    = {Zhou, Yi and Bosamiya, Jay and Takashima, Yoshiki and Li,
+               Jessica and Heule, Marijn and Parno, Bryan},
+  title     = {{Mariposa}: Measuring {SMT} Instability in Automated Program
+               Verification},
+  booktitle = {Proceedings of the Formal Methods in Computer-Aided Design
+               (FMCAD)},
+  year      = 2023,
+  month     = {October}
+}
+
+
+@inproceedings{ironsync,
+  author    = {Hance, Travis and Zhou, Yi and Lattuada, Andrea and Achermann, Reto and Conway, Alex and Stutsman, Ryan and Zellweger, Gerd and Hawblitzel, Chris and Howell, Jon and Parno, Bryan},
+  booktitle = {Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  code      = {https://github.com/secure-foundations/ironsync-osdi2023},
+  month     = {July},
+  title     = {{Sharding the State Machine: Automated Modular Reasoning for Complex Concurrent Systems}},
+  year      = {2023}
+}
+
+@inproceedings{fastver2,
+  author    = {Arasu, Arvind and Ramananandro, Tahina and Rastogi, Aseem and Swamy, Nikhil and Fromherz, Aymeric and Hietala, Kesha and Parno, Bryan and Ramamurthy, Ravi},
+  booktitle = {Proceedings of the ACM Conference on Certified Programs and Proofs (CPP)},
+  month     = {January},
+  title     = {{FastVer2}: A Provably Correct Monitor for Concurrent, Key-Value Stores},
+  year      = {2023}
+}
+
+@inproceedings{galapagos,
+  author    = {Zhou, Yi and Gibson, Sydney and Cai, Sarah and Winchell, Menucha and Parno, Bryan},
+  booktitle = {Proceedings of the ACM Conference on Computer and Communications Security (CCS)},
+  code      = {https://github.com/secure-foundations/veri-titan},
+  month     = {November},
+  title     = {Galápagos: Developing Verified Low-Level Cryptography on Heterogeneous Hardware},
+  year      = {2023}
+}
+
+@inproceedings{boogie,
+  author    = {Barnett, Mike
+               and Chang, Bor-Yuh Evan
+               and DeLine, Robert
+               and Jacobs, Bart
+               and Leino, K. Rustan M.},
+  editor    = {de Boer, Frank S.
+               and Bonsangue, Marcello M.
+               and Graf, Susanne
+               and de Roever, Willem-Paul},
+  title     = {Boogie: A Modular Reusable Verifier for Object-Oriented Programs},
+  booktitle = {Formal Methods for Components and Objects},
+  year      = {2006},
+  publisher = {Springer Berlin Heidelberg},
+  address   = {Berlin, Heidelberg},
+  pages     = {364--387},
+  isbn      = {978-3-540-36750-5}
+}
+
+@misc{dafny-brittleness,
+  author       = {Aaron Tomb and Jean-Baptiste Tristan},
+  howpublished = {https://dafny.org/blog/2023/12/01/avoiding-verification-brittleness/},
+  title        = {Avoiding Verification Brittleness in {Dafny}},
+  year         = {2023}
+}
+
+@misc{dafny-debugging,
+  howpublished = {\url{https://dafny.org/dafny/DafnyRef/DafnyRef\#sec-brittle-verification}},
+  title        = {Verification Debugging When Verification Fails},
+  key          = {Verification Debugging When Verification Fails},
+}
+
+
+@misc{fstar-debugging,
+  howpublished = {\url{https://fstar-lang.org/tutorial/book/under\_the\_hood/uth\_smt.html\#profiling-z3-and-solving-proof-performance-issues}},
+  title        = {Profiling {Z3} and Solving Proof Performance Issues},
+  key          = {Profiling {Z3} and Solving Proof Performance Issues},
+}
+
+@inproceedings{e-matching,
+  author    = {de Moura, Leonardo
+               and Bj{\o}rner, Nikolaj},
+  xeditor    = {Pfenning, Frank},
+  title     = {Efficient E-Matching for {SMT} Solvers},
+  booktitle = {Conference on Automated Deduction (CADE)},
+  year      = {2007},
+  xpages     = {183--198},
+  isbn      = {978-3-540-73595-3}
+}
+
+@inproceedings{cutlerimproving,
+  title     = {Improving the Stability of Type Soundness Proofs in {Dafny}},
+  booktitle = {Proceedings of the First Workshop on Dafny},
+  year      = {2024},
+  author    = {Cutler, Joseph W and Torlak, Emina and Hicks, Michael}
+}
+
+@inproceedings{dafny-stable-module,
+  title     = {Incremental Proof Development in {Dafny} with Module-Based Induction},
+  booktitle = {Proceedings of the First Workshop on Dafny},
+  year      = {2024},
+  author    = {Ho, Son and Pit-Claudel, Cl{\'e}ment}
+}
+ 
+@inproceedings{dafny64,
+  title     = {Enhancing Proof Stability},
+  booktitle = {Proceedings of the First Workshop on Dafny},
+  year      = {2024},
+  author    = {McLaughlin, Sean and Jaloyan, Georges-Axel and Xiang, Tongtong and Rabe, Florian}
+}
+
+@inproceedings{angr,
+  title        = {Sok:(state of) the Art of War: Offensive Techniques in Binary Analysis},
+  author       = {Shoshitaishvili, Yan and Wang, Ruoyu and Salls, Christopher and Stephens, Nick and Polino, Mario and Dutcher, Andrew and Grosen, John and Feng, Siji and Hauser, Christophe and Kruegel, Christopher and others},
+  booktitle    = {2016 IEEE symposium on security and privacy},
+  pages        = {138--157},
+  year         = {2016},
+  organization = {IEEE}
+}
+
+@inproceedings{cbmc,
+  title        = {CBMC--C Bounded Model Checker: (Competition Contribution)},
+  author       = {Kroening, Daniel and Tautschnig, Michael},
+  booktitle    = {Tools and Algorithms for the Construction and Analysis of Systems: 20th International Conference, TACAS 2014, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2014, Grenoble, France, April 5-13, 2014. Proceedings 20},
+  pages        = {389--391},
+  year         = {2014},
+  organization = {Springer}
+}
+
+@misc{dafny-ref,
+  author       = {{Dafny-lang Community}},
+  howpublished = {https://dafny.org/dafny/DafnyRef/DafnyRef},
+  title        = {Dafny Reference Manual},
+  year         = {2024}
+}
+
+@inproceedings{dart,
+  title     = {DART: Directed automated random testing},
+  author    = {Godefroid, Patrice and Klarlund, Nils and Sen, Koushik},
+  booktitle = {Proceedings of the 2005 ACM SIGPLAN conference on Programming language design and implementation},
+  pages     = {213--223},
+  year      = {2005}
+}
+
+@inproceedings{proofreconstruction,
+  title        = {Source-level proof reconstruction for interactive theorem proving},
+  author       = {Paulson, Lawrence C and Susanto, Kong Woei},
+  booktitle    = {International Conference on Theorem Proving in Higher Order Logics},
+  pages        = {232--245},
+  year         = {2007},
+  organization = {Springer}
+}
+
+@book{isabelle,
+  title     = {Isabelle/HOL: a proof assistant for higher-order logic},
+  author    = {Nipkow, Tobias and Wenzel, Markus and Paulson, Lawrence C},
+  year      = {2002},
+  publisher = {Springer}
+}
+
+@article{sledgehammer,
+  title     = {Extending {Sledgehammer} with {SMT} solvers},
+  author    = {Blanchette, Jasmin Christian and B{\"o}hme, Sascha and Paulson, Lawrence C},
+  journal   = {Journal of automated reasoning},
+  volume    = {51},
+  number    = {1},
+  pages     = {109--128},
+  year      = {2013},
+  publisher = {Springer}
+}
+
+@article{precisionrecall,
+  title     = {The Relationship between Recall and Precision},
+  author    = {Buckland, Michael and Gey, Fredric},
+  journal   = {Journal of the American society for information science},
+  volume    = {45},
+  number    = {1},
+  pages     = {12--19},
+  year      = {1994},
+  publisher = {Wiley Online Library}
+}
+
+@misc{tree-shaking-js,
+  author       = {{Webpack Contributors}},
+  howpublished = {\url{https://webpack.js.org/guides/tree-shaking/}},
+  title        = {Tree Shaking},
+  year         = {2023}
+}
+
+@misc{tree-shaking-lisp,
+  author       = {Pinku Surana},
+  howpublished = {\url{https://groups.google.com/g/comp.lang.lisp/c/pspFr1XByZk}},
+  title        = {What's a treeshaker?},
+  year         = 1994
+}
+
+@inproceedings{sinequanon,
+  title        = {Sine Qua Non for Large Theory Reasoning},
+  author       = {Hoder, Kry{\v{s}}tof and Voronkov, Andrei},
+  booktitle    = {International Conference on Automated Deduction},
+  pages        = {299--314},
+  year         = {2011},
+  organization = {Springer}
+}
+
+@misc{dfyprune,
+  author       = {{Dafny Maintainers}},
+  howpublished = {\url{https://github.com/dafny-lang/dafny/pull/1612}},
+  title        = {Prevent changes unrelated to a proof from changing the verification behavior of the proof},
+  year         = {2021}
+}
+
+@book{fitting2012first,
+  title     = {{First-order Logic and Automated Theorem Proving}},
+  author    = {Fitting, Melvin},
+  year      = {2012},
+  publisher = {Springer Science \& Business Media}
+}
+
+@article{meng2009lightweight,
+  title     = {{Lightweight Relevance Filtering for Machine-Generated Resolution Problems}},
+  author    = {Meng, Jia and Paulson, Lawrence C},
+  journal   = {Journal of Applied Logic},
+  volume    = {7},
+  number    = {1},
+  pages     = {41--57},
+  year      = {2009},
+  publisher = {Elsevier}
+}
+
+@article{sutcliffe1998tptp,
+  title     = {{The TPTP Problem Library}},
+  author    = {Sutcliffe, Geoff and Suttner, Christian},
+  journal   = {Journal of Automated Reasoning},
+  volume    = {21},
+  pages     = {177--203},
+  year      = {1998},
+  publisher = {Springer}
+}
+
+@inproceedings{cvc5-proof,
+  author    = {Barbosa, Haniel
+               and Reynolds, Andrew
+               and Kremer, Gereon
+               and Lachnitt, Hanna
+               and Niemetz, Aina
+               and N{\"o}tzli, Andres
+               and Ozdemir, Alex
+               and Preiner, Mathias
+               and Viswanathan, Arjun
+               and Viteri, Scott
+               and Zohar, Yoni
+               and Tinelli, Cesare
+               and Barrett, Clark},
+  editor    = {Blanchette, Jasmin
+               and Kov{\'a}cs, Laura
+               and Pattinson, Dirk},
+  title     = {Flexible Proof Production in an Industrial-Strength SMT Solver},
+  booktitle = {Automated Reasoning},
+  year      = {2022}
+}
+
+@inproceedings{tfidf,
+  title={Using tf-idf to determine word relevance in document queries},
+  author={Ramos, Juan and others},
+  booktitle={Proceedings of the first instructional conference on machine learning},
+  volume={242},
+  number={1},
+  pages={29--48},
+  year={2003},
+  organization={Citeseer}
+}
+
+@article{iterative-deepening,
+  title={Depth-first iterative-deepening: An optimal admissible tree search},
+  author={Korf, Richard E},
+  journal={Artificial intelligence},
+  volume={27},
+  number={1},
+  pages={97--109},
+  year={1985},
+  publisher={Elsevier}
+}
+
+@inproceedings{sat-survival,
+  title={Benchmarking Solvers, {SAT}-style.},
+  author={Brain, Martin and Davenport, James H and Griggio, Alberto},
+  booktitle={SC$^2$@ ISSAC},
+  year={2017}
+}
+
+@inproceedings{axiom-profiler,
+  title={The axiom profiler: Understanding and debugging smt quantifier instantiations},
+  author={Becker, Nils and M{\"u}ller, Peter and Summers, Alexander J},
+  booktitle={Tools and Algorithms for the Construction and Analysis of Systems (TACAS)},
+  year={2019},
+}
+
+
+@misc{normalize,
+      title={Using Normalization to Improve {SMT} Solver Stability}, 
+      author={Daneshvar Amrollahi and Mathias Preiner and Aina Niemetz and Andrew Reynolds and Moses Charikar and Cesare Tinelli and Clark Barrett},
+      year={2025},
+      eprint={2410.22419},
+      archivePrefix={arXiv},
+      primaryClass={cs.LO},
+      url={https://arxiv.org/abs/2410.22419}, 
+}
+
+inproceedings{verus-sys,
+  author    = {Lattuada, Andrea and Hance, Travis and Bosamiya, Jay and Brun, Matthias and Cho, Chanhee and LeBlanc, Hayley and Srinivasan, Pranav and Achermann, Reto and Chajed, Tej and Hawblitzel, Chris and Howell, Jon and Lorch, Jay and Padon, Oded and Parno, Bryan},
+  booktitle = {Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)},
+  code      = {https://github.com/verus-lang/verus},
+  month     = {November},
+  title     = {Verus: A Practical Foundation for Systems Verification},
+  year      = {2024}
+}
+
+@inproceedings{amazon-billion-queries,
+author="Rungta, Neha",
+editor="Shoham, Sharon and Vizel, Yakir",
+title={A Billion {SMT} Queries a Day (Invited Paper)},
+booktitle  = {Proceedings of the International Conference on Computer Aided Verification (CAV)},
+year="2022",
+xpublisher="Springer International Publishing",
+xaddress="Cham",
+xpages="3--18",
+xisbn="978-3-031-13185-1"
+}
+
+@inproceedings{amazon-cloudscale,
+ author = {Aleks Chakarov and Jaco Geldenhuys and Matthew Heck and Mike Hicks and Sam Huang and Georges Axel Jaloyan and Anjali Joshi and Rustan Leino and Mikael Mayer and Sean McLaughlin and Akhilesh Mritunjai and Clément Pit Claudel and Sorawee Porncharoenwase and Florian Rabe and Marianna Rapoport and Giles Reger and Cody Roux and Neha Rungta and Robin Salkeld and Matthias Schlaipfer and Daniel Schoepe and Johanna Schwartzentruber and Serdar Tasiran and Aaron Tomb and Emina Torlak and John Tristan and Lucas Wagner and Mike Whalen and Remy Willems and Jenny Xiang and Tae Joon Byun and Joshua Cohen and Ruijie Wang and Junyoung Jang and Jakob Rath and Hira Taqdees Syeda and Dominik Wagner and Yongwei Yuan},
+ title = {Formally verified cloud-scale authorization},
+ year = {2025},
+ url = {https://www.amazon.science/publications/formally-verified-cloud-scale-authorization},
+ booktitle = {International Conference on Software Engineering (ICSE)}
+}
+
+@INPROCEEDINGS{Zelkova,
+  author={Backes, John and Bolignano, Pauline and Cook, Byron and Dodge, Catherine and Gacek, Andrew and Luckow, Kasper and Rungta, Neha and Tkachuk, Oksana and Varming, Carsten},
+  booktitle={Formal Methods in Computer Aided Design (FMCAD)}, 
+  title={Semantic-based Automated Reasoning for {AWS} Access Policies using {SMT}}, 
+  year={2018},
+  volume={},
+  number={},
+  keywords={Access control;Tools;Syntactics;Encoding;Semantics;Cloud computing},
+  doi={10.23919/FMCAD.2018.8602994}}
+
+@inproceedings{free-facts,
+author = {Bordis, Tabea and Leino, K. Rustan M.},
+title = {Free Facts: An Alternative to Inefficient Axioms in {Dafny}},
+year = {2024},
+isbn = {978-3-031-71161-9},
+doi = {10.1007/978-3-031-71162-6_8},
+abstract = {Formal software verification relies on properties of functions and built-in operators. Unless these properties are handled directly by decision procedures, an automated verifier includes them in verification conditions by supplying them as universally quantified axioms or theorems. The use of quantifiers sometimes leads to bad performance, especially if automation causes the quantifiers to be instantiated many times.This paper proposes free facts as an alternative to some axioms. A free fact is a pre-instantiated axiom that is generated alongside the formulas in a verification condition that can benefit from the facts. Replacing an axiom with free facts thus reduces the number of quantifiers in verification conditions. Free facts are statically triggered by syntactic occurrences of certain patterns in the proof terms. This is less powerful than the dynamically triggered patterns used during proof construction. However, the paper shows that free facts perform well in practice.},
+booktitle = {Formal Methods: 26th International Symposium (FM)},
+numpages = {19},
+keywords = {SMT-based reasoning, proof brittleness, Dafny, formal verification},
+}
+
+%inproceedings{cedar-soundnessproofs,
+  author    = {Joseph W. Cutler and Emina Torlak and Michael Hicks},
+  title     = {Improving the Stability of Type Soundness Proofs in Dafny},
+  booktitle = {Proceedings of ACM Conference (Conference'17)},
+  year      = {2023},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  pages     = {6},
+  doi       = {10.1145/nnnnnnn.nnnnnnn}
+}
+
+@inproceedings{cedar,
+author = {Cutler, Joseph W. and Disselkoen, Craig and Eline, Aaron and He, Shaobo and Headley, Kyle and Hicks, Michael and Hietala, Kesha and Ioannidis, Eleftherios and Kastner, John and Mamat, Anwar and McAdams, Darin and McCutchen, Matt and Rungta, Neha and Torlak, Emina and Wells, Andrew M.},
+title = {Cedar: A New Language for Expressive, Fast, Safe, and Analyzable Authorization},
+year = {2024},
+issue_date = {April 2024},
+booktitle = {Proceedings of the ACM Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)},
+doi = {10.1145/3649835},
+month = Apr,
+articleno = {118},
+numpages = {28},
+keywords = {Authorization, Formal models, Policies as code}
+}
+
+
+@article{starmalloc,
+author = {Reitz, Antonin and Fromherz, Aymeric and Protzenko, Jonathan},
+title = {StarMalloc: Verifying a Modern, Hardened Memory Allocator},
+year = {2024},
+issue_date = {October 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+booktitle = {Proceedings of the ACM Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)},
+doi = {10.1145/3689773},
+journal = {Proc. ACM Program. Lang.},
+month = oct,
+articleno = {333},
+numpages = {30},
+keywords = {Formal Verification, Memory Allocators, Separation Logic}
+}
+
+@inproceedings {anvil,
+author = {Xudong Sun and Wenjie Ma and Jiawei Tyler Gu and Zicheng Ma and Tej Chajed and Jon Howell and Andrea Lattuada and Oded Padon and Lalith Suresh and Adriana Szekeres and Tianyin Xu},
+title = {Anvil: Verifying Liveness of Cluster Management Controllers},
+booktitle = {18th USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+year = {2024},
+isbn = {978-1-939133-40-3},
+address = {Santa Clara, CA},
+url = {https://www.usenix.org/conference/osdi24/presentation/sun-xudong},
+publisher = {USENIX Association},
+month = jul
+}
+
+@misc{smt-scope,
+  author = {Jonáš Fiala},
+  title = {\smtscope},
+  year = {2025},
+  url = {https://github.com/viperproject/smt-scope},
+  commit = {dccb13cc6853e5e1ac11cbf1d074709e8554c870},
+  note      = {Accessed Feb. 2025}
+}
+
+
+@inproceedings{proof-repair,
+author = {Ringer, Talia and Yazdani, Nathaniel and Leo, John and Grossman, Dan},
+title = {Adapting proof automation to adapt proofs},
+year = {2018},
+isbn = {9781450355865},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3167094},
+xdoi = {10.1145/3167094},
+abstract = {We extend proof automation in an interactive theorem prover to analyze changes in specifications and proofs. Our approach leverages the history of changes to specifications and proofs to search for a patch that can be applied to other specifications and proofs that need to change in analogous ways.  We identify and implement five core components that are key to searching for a patch. We build a patch finding procedure from these components, which we configure for various classes of changes. We implement this procedure in a Coq plugin as a proof-of-concept and use it on real Coq code to change specifications, port definitions of a type, and update the Coq standard library. We show how our findings help drive a future that moves the burden of dealing with the brittleness of small changes in an interactive theorem prover away from the programmer and into automated tooling.},
+booktitle = {Proceedings of the 7th ACM SIGPLAN International Conference on Certified Programs and Proofs},
+pages = {115–129},
+numpages = {15},
+keywords = {proof automation, proof evolution, proof repair},
+location = {Los Angeles, CA, USA},
+series = {CPP 2018}
+}
+
+@inproceedings{atmosphere,
+author = {Chen, Xiangdong and Li, Zhaofeng and Mesicek, Lukas and Narayanan, Vikram and Burtsev, Anton},
+title = {Atmosphere: Towards Practical Verified Kernels in Rust},
+year = {2023},
+isbn = {9798400704116},
+doi = {10.1145/3625275.3625401},
+abstract = {Historically, development of formally-verified operating systems was a challenging, time-consuming undertaking that relied on a narrow formal verification expertise and required many person-years of effort. We argue, however, that the balance of practicality is finally changing with development of automated verification tools that leverage a unique combination of the linear type system of Rust and automated verification based on satisfiability modulo theories (SMT). Our work leverages, Verus, a new SMT-based verifier for Rust, for development of a minimal yet practical microkernel, Atmosphere. Atmosphere is designed as a full-featured microkernel conceptually similar to the line of early L4 microkernels. We develop all code in Rust and prove its functional correctness, i.e., refinement of a high-level specification with Verus. Our experience shows that Verus provides a collection of practical features that significantly lower the burden of a verification effort making it possible to reason about correctness of the low-level systems code, e.g., low-level memory and address space management, recursive data structures like linked lists and page tables, etc. On average our code has proof-to-code ratio of 7.5:1 which is significantly lower than in prior approaches.},
+booktitle = {Proceedings of the 1st Workshop on Kernel Isolation, Safety and Verification (KISV)},
+numpages = {9},
+location = {Koblenz, Germany},
+}
+
+
+
+
+@misc{splinterdb,
+  title        = {Verified Splinter DB},
+  key          = {Verified Splinter DB},
+  howpublished = {\url{https://github.com/vmware-labs/verified-betrfs/tree/main/Splinter}},
+  note      = {Accessed Feb. 2025}
+}
+
+@inproceedings{verismo,
+author = {Zhou, Ziqiao and Anjali and Chen, Weiteng and Gong, Sishuai and Hawblitzel, Chris and Cui, Weidong},
+title = {{VERISMO}: a verified security module for confidential {VMs}},
+year = {2024},
+isbn = {978-1-939133-40-3},
+abstract = {Hardware vendors have introduced confidential VM architectures (e.g., AMD SEV-SNP, Intel TDX and Arm CCA) in recent years. They eliminate the trust in the hypervisor and lead to the need for security modules such as AMD Secure VM Service Module (SVSM). These security modules aim to provide a guest with security features that previously were offered by the hypervisor. Since the security of such modules is critical, Rust is used to implement them for its known memory safety features. However, using Rust for implementation does not guarantee correctness, and the use of unsafe Rust compromises the memory safety guarantee.In this paper, we introduce VERISMO, the first verified security module for confidential VMs on AMD SEV-SNP. VERISMO is fully functional and provides security features such as code integrity, runtime measurement, and secret management. More importantly, as a Rust-based implementation, VERISMO is fully verified for functional correctness, secure information flow, and VM confidentiality and integrity. The key challenge in verifying VERISMO is that the untrusted hypervisor can interrupt VERISMO's execution and modify the hardware state at any time. We address this challenge by dividing verification into two layers. The upper layer handles the concurrent hypervisor execution, while the lower layer handles VERISMO's own concurrent execution. When compared with a C-based implementation, VERISMO achieves similar performance. When verifying VERISMO, we identified a subtle requirement for VM confidentiality and found that it was overlooked by AMD SVSM. This demonstrates the necessity for formal verification.},
+booktitle = {Proceedings of the 18th USENIX Conference on Operating Systems Design and Implementation (OSDI)},
+articleno = {32},
+numpages = {16},
+}
+
+@misc{vsystems-ironkv,
+  title        = {Verified {IronKV}},
+  key          = {Verified {IronKV}},
+  howpublished = {\url{https://github.com/verus-lang/verified-ironkv}},
+  note      = {Accessed Feb. 2025}
+}
+
+@misc{vsystems-mimalloc,
+  title        = {Verified Memory Allocator},
+  key          = {Verified Memory Allocator},
+  howpublished = {\url{https://github.com/verus-lang/verified-memory-allocator}},
+  note      = {Accessed Feb. 2025}
+}
+
+@misc{mimalloc,
+  title        = {Mimalloc},
+  key          = {Mimalloc},
+  howpublished = {\url{https://github.com/microsoft/mimalloc?tab=readme-ov-file}},
+  note      = {Accessed Feb. 2025}
+}
+
+@misc{vsystems-noderep,
+  title        = {Verified Node Replication},
+  key          = {Verified Node Replication},
+  howpublished = {\url{https://github.com/verus-lang/verified-node-replication}},
+  note      = {Accessed Feb. 2025}
+}
+
+@misc{vsystems-storage,
+  title        = {Verified Storage},
+  key          = {Verified Storage},
+  howpublished = {\url{https://github.com/microsoft/verified-storage}},
+  note      = {Accessed Feb. 2025}
+}
+
+@inproceedings{NrOS,
+  author    = {Ankit Bhardwaj and Chinmay Kulkarni and Reto Achermann and Irina Calciu and Sanidhya Kashyap and Ryan Stutsman and Amy Tai and Gerd Zellweger},
+  title     = {{NrOS}: Effective Replication and Sharing in an Operating System},
+  booktitle = {Proceedings of the USENIX Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+  year      = {2021},
+  isbn      = {978-1-939133-22-9},
+  xpages     = {295--312},
+  month     = jul
+}
+
+@misc{vsystems-pagetable,
+  title        = {Verified Page Table for {NrOS}},
+  key          = {Verified Page Table for {NrOS}},
+  howpublished = {\url{https://github.com/utaal/verified-nrkernel}},
+  note      = {Accessed Feb. 2025}
+}
+
+@InProceedings{vampire,
+author="Kov{\'a}cs, Laura
+and Voronkov, Andrei",
+title="First-Order Theorem Proving and Vampire",
+booktitle="Computer Aided Verification (CAV)",
+year="2013",
+isbn="978-3-642-39799-8"
+}
+
+@article{superposition,
+  author       = {Leo Bachmair and
+                  Harald Ganzinger},
+  title        = {Rewrite-Based Equational Theorem Proving with Selection and Simplification},
+  journal      = {Journal of Logica and Computation},
+  volume       = {4},
+  number       = {3},
+  pages        = {217--247},
+  year         = {1994},
+  url          = {https://doi.org/10.1093/logcom/4.3.217},
+  doi          = {10.1093/LOGCOM/4.3.217},
+  timestamp    = {Wed, 17 May 2017 14:25:56 +0200},
+  biburl       = {https://dblp.org/rec/journals/logcom/BachmairG94.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+article{superposition,
+  title = {Rewrite-Based Equational Theorem Proving with Selection and Simplification},
+  author = {Leo Bachmair and Harald Ganzinger},
+  date = {1994-06},
+  year = {1994},
+  journaltitle = {Journal of Logic and Computation},
+  volume = {4},
+  number = {3},
+  eprint = {https://academic.oup.com/logcom/article-pdf/4/3/217/2843068/4-3-217.pdf},
+  pages = {217--247},
+  issn = {0955-792X},
+  doi = {10.1093/logcom/4.3.217},
+  abstract = {We present various refutationally complete calculi for first-order clauses with equality that allow for arbitrary selection of negative atoms in clauses. Refutational completeness is established via the use of well-founded orderings on clauses for defining a Herbrand model for a consistent set of clauses. We also formulate an abstract notion of redundancy and show that the deletion of redundant clauses during the theorem proving process preserves refutational completeness. It is often possible to compute the closure of non-trivial sets of clauses under application of non-redundant inferences. The refutation of goals for such complete sets of clauses is simpler than for arbitrary sets of clauses, in particular it suffices to consider only those proofs that have support from the goals, without compromising refutational completeness. For certain classes of formulas the search space can be restricted even further, as we demonstrate for so-called quasi-Horn clauses. The results in this paper contain as special cases or generalize many known results about Knuth–Bendix-like completion procedures (for equations, Horn clauses, and Horn clauses with Boolean conditions), completion of first-order clauses by clausal rewriting, and inductive theorem proving for Horn clauses.}
+}
+  url = {https://doi.org/10.1093/logcom/4.3.217},
+
+
+@InProceedings{e-prover,
+  author =       {Stephan Schulz and Simon Cruanes and Petar Vukmirovi{\'c}},
+  title =        {Faster, Higher, Stronger: {E} 2.3},
+  year =         {2019},
+  OPTcrossref =  {},
+  OPTkey =       {},
+  booktitle =    {Proc.\ of the 27th CADE, Natal, Brasil},
+  editor =       {Pascal Fontaine},
+  OPTvolume =    {},
+  number =       {11716},
+  series =       {LNAI},
+  pages =        {495--507},
+  OPTmonth =     {},
+  OPTaddress =   {},
+  OPTorganization = {},
+  publisher =    {Springer},
+  OPTannote =    {StS},
+}
+
+@InProceedings{vampire-arithmetic,
+author="Korovin, Konstantin
+and Kov{\'a}cs, Laura
+and Reger, Giles
+and Schoisswohl, Johannes
+and Voronkov, Andrei",
+editor="Sankaranarayanan, Sriram
+and Sharygina, Natasha",
+title="ALASCA: Reasoning in Quantified Linear Arithmetic",
+booktitle="Tools and Algorithms for the Construction and Analysis of Systems",
+year="2023",
+abstract="Automated reasoning is routinely used in the rigorous construction and analysis of complex systems. Among different theories, arithmetic stands out as one of the most frequently used and at the same time one of the most challenging in the presence of quantifiers and uninterpreted function symbols. First-order theorem provers perform very well on quantified problems due to the efficient superposition calculus, but support for arithmetic reasoning is limited to heuristic axioms. In this paper, we introduce the {\$}{\$}{\backslash}textsc {\{}Alasca{\}}{\$}{\$}ALASCAcalculus that lifts superposition reasoning to the linear arithmetic domain. We show that {\$}{\$}{\backslash}textsc {\{}Alasca{\}}{\$}{\$}ALASCAis both sound and complete with respect to an axiomatisation of linear arithmetic. We implemented and evaluated {\$}{\$}{\backslash}textsc {\{}Alasca{\}}{\$}{\$}ALASCAusing the Vampire theorem prover, solving many more challenging problems compared to state-of-the-art reasoners.",
+isbn="978-3-031-30823-9"
+}
+
+
+
+@inproceedings{vampire-adt,
+author = {Kov\'{a}cs, Laura and Robillard, Simon and Voronkov, Andrei},
+title = {Coming to terms with quantified reasoning},
+year = {2017},
+doi = {10.1145/3009837.3009887},
+booktitle = {Proceedings of the 44th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL)},
+keywords = {superposition proving, first-order theorem proving, automated reasoning, algebraic data types, Program analysis and verification},
+series = {POPL '17}
+}
+
+@inproceedings{flowcert,
+  author    = {Lin, Zhengyao and Gancher, Joshua and Parno, Bryan},
+  booktitle = {Proceedings of the ACM Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA)},
+  month     = {October},
+  title     = {FlowCert: Translation Validation for Asynchronous Dataflow via Dynamic Fractional Permissions},
+  year      = {2024}
+}
+
+@misc{mariposa-github,
+  title        = {Cazamariposas},
+  key          = {Cazamariposas},
+  howpublished = {\url{https://github.com/secure-foundations/mariposa}},
+  note      = {Accessed Feb. 2025}
+}
+
+@misc{smtcomp2025verus,
+  author = {Shah, Amar},
+  title = {Adding benchmarks from {Verus} (a {Rust} Verification tool)},
+  year = {2025},
+  howpublished = {GitHub Pull Request \#12},
+  publisher = {SMT-LIB/benchmark-submission},
+  url = {https://github.com/SMT-LIB/benchmark-submission/pull/12},
+  note = {Merged on April 17, 2025}
+}
+
+@misc{mariposa-zenodo,
+  author       = {Zhou, Yi and Bosamiya, Jay and Takashima, Yoshiki and Li, Jessica and Heule, Marijn and Parno, Bryan},
+  title        = {Mariposa: Measuring {SMT} Instability in Automated Program Verification [Benchmarks]},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.34727/2023/isbn.978-3-85448-060-0_26},
+  url          = {https://doi.org/10.34727/2023/isbn.978-3-85448-060-0_26},
+  note         = {[Data set]}
+}
+

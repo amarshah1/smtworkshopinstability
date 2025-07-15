@@ -1,0 +1,11 @@
+We propose an Instability Track for SMT-COMP to address the critical issue of
+  solver instability in program verification. SMT solvers often exhibit
+  significant performance variations when solving semantically equivalent
+  queries, creating challenges for industrial adoption of SMT-based
+  verification. We describe Mariposa, our tool that measures solver instability
+  by creating semantics-preserving mutants of SMT queries and performing
+  statistical analysis. The proposed track would evaluate solvers both on their
+  ability to solve verification queries quickly and their stability across query
+  variations. We discuss benchmark sources from Dafny, \fstar, and Verus
+  verification projects, and propose concrete scoring rubrics for evaluating
+  solver stability.

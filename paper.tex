@@ -178,12 +178,14 @@ query is \emph{unsolvable}. The \emph{Instability Track} would reward a solver
 both for solving a large number of queries quickly and for being stable on the
 queries it does solve.
 
-Mariposa can perform three different semantics-preserving changes to a query: renaming variables, reordering assertions, and changing the random seed given to the solver. Mariposa found that 2.6\% of SMT queries from Dafny and \fstar verification projects are unstable~\cite{mariposa}. Later work found that 1\% of SMT queries from Verus verification projects are unstable~\cite{cazamariposas}. These numbers are worrying as even a single unstable query can cause verification to spuriously fail down the line. Additionally, we report instability from finalized projects. We expect the amount of instability during development to be higher.
+Mariposa can perform three different semantics-preserving changes to a query: renaming variables, reordering assertions, and changing the random seed given to the solver. Mariposa found that 2.6\% of SMT queries from Dafny and \fstar verification projects are unstable~\cite{mariposa}. Later work found that 1\% of SMT queries from Verus verification projects are unstable~\cite{cazamariposas}. 
+
+These numbers are worrying as large verification projects generate many thousands of queries, and each unstable query inhibits developer productivity. Manually investigating and repairing instability takes away from time the developers could be spending writing new code or proofs. Additionally, we report instability from finalized projects. We expect the amount of instability during development to be higher.
 
 \paragraph{Benchmarks.} Mariposa contributed a set of instability benchmarks
 from various large-scale Dafny and \fstar verification projects~\cite{mariposa}. We would
 also contribute a benchmark suite from ten different large-scale system
-verification projects written using the Rust verifier Verus~\cite{verus-ghost}.
+verification projects written using Verus~\cite{verus-ghost}.
 These have been submitted to the 2025 SMT competition~\cite{smtcomp2025verus},
 but are scattered across four different benchmark families (\textsc{ufdtlia}, \textsc{ufdtnia}, \textsc{ufdtbvlia}, and \textsc{ufdtbvnia}). These queries contains uninterpreted functions, quantifers, algebraic data types, linear arithmetic and in certain cases non-linear arithmetic and bit-vectors. We hope to solicit benchmarks from other verification tools.
 
@@ -259,7 +261,7 @@ scoring metric:
 The PAR-2I score is a fix for issue 1 and the instability score is a fix for issue 2. We could also consider a hybrid approach that combine these two methods. The exact scoring mechanism will be finalized based on community feedback.
 
 \paragraph{Other Features.} There are two interesting eccentricities of these
-SMT queries that may be worth incorporating into the track.
+SMT queries that could be incorporated into the track.
 
 \begin{itemize}
 \item \textbf{Goal-Axiom Divide.} Program verification tools like Dafny, \fstar,
@@ -306,7 +308,7 @@ runtimes between syntactically different, but semantically equivalent,
 queries~\cite{normalize}. Dafny developers have proposed a method for instantiating universal
 quantifiers for axioms at the source level~\cite{free-facts}.
 
-All of this work makes some improvements to stability, but does not address key
+All of this work improves stability, but does not address key
 underlying issues, and instability is still prevalent when we apply these fixes.
 More work is required. We believe that much of this work can be done at the SMT-solver level and thus a stability track at the SMT competition could be
 immensely helpful for encouraging solver developers to improve stability.
